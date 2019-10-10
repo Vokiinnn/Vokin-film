@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "Vokin影院",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar":{
+    "color":"#888",
+    "selectColor":"#09bb07",
+    "fontSize":"30rpx",
+    "backgroundColor":"#000",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"最新上映",
+      "iconPath":"/pages/icon/select/电影.png",
+      "selectedIconPath":"/pages/icon/selected/电影.png"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "影院",
+      "iconPath": "/pages/icon/select/影院.png",
+      "selectedIconPath": "/pages/icon/selected/影院.png"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "搜索",
+      "iconPath": "/pages/icon/select/搜索.png",
+      "selectedIconPath": "/pages/icon/selected/搜索.png"
+    }
+    ]
+  }
+}

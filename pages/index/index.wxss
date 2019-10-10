@@ -1,0 +1,48 @@
+/**index.wxss**/
+page{
+  height:100%;
+}
+.swiper{
+  width:100%;
+  height:400rpx;
+  /* margin-left:180rpx; */
+}
+.swiperImg{
+  /* width:50%; */
+  height:400rpx;
+  margin:0 40rpx;
+}
+.content{
+  background-color:#3a3a3a;
+  min-height: 100%;
+}
+.moive{
+  padding:4rpx;  
+}
+.moiveImg{
+  width:200rpx;
+  height:320rpx;
+}
+.moive-info{
+  padding-left:40rpx;
+}
+.singerMovie{
+  display:flex;
+  width:100%;
+  border-bottom:1px solid #888;
+  margin-top:8rpx;
+}
+.base-info{
+  display:flex;
+  color:#fff;
+  font-size:30rpx;
+  line-height:60rpx;
+  margin-left:40rpx;
+  margin-top:-40rpx;
+}
+.noInternet{
+  position:fixed;
+  left:20%;
+  top:50%;
+  color:white;
+}

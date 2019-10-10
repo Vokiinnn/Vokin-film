@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="content">
+  <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper" circular="true" 
+  previous-margin="40rpx" next-margin="80rpx">
+    <block wx:for="{{swiperImgUrl}}" wx:key="{{this}}" >
+      <swiper-item class="headerImg">
+        <image src="{{item}}" class="swiperImg"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="moive">
+    <block wx:for="{{moive}}" wx:key="{{this}}">
+     <view class="singerMovie">
+        <view class="pic">
+          <image class="moiveImg" src="{{item.images.medium}}"></image>
+        </view>
+        <view class="base-info">
+          <text>
+            豆瓣评分：{{item.rating.average?item.rating.average:'暂未上映'}}
+            电影：{{item.title}}
+            导演：<text wx:for="{{item.directors}}" wx:key="this">{{item.name}} </text>
+            主演：<text wx:for="{{item.casts}}" wx:key="this">{{item.name}}  </text>
+          </text>
+        </view>
+      </view>
+    </block>
+    <text class="{{internet}}?noInternet:''" wx:if="{{internet}}">无网络连接，请检查设置！</text>
+  </view>
+</view>
